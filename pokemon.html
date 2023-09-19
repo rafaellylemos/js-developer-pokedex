@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokedex</title>
+  <title>Pokemon</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
@@ -17,19 +17,36 @@
   <link rel="stylesheet" href="/./js-developer-pokedex/assets/css/pokedex.css">
 </head>
 <body>
-  <section class="content">
-    <h1>Pokedex</h1>
 
-    <ol id="pokemonList" class="pokemons">
-    </ol>
+  <div id="pokeGeral">
 
-    <div class="pagination">
-      <button id="loadMoreButton" type="button">
-        Load More
-      </button>
+    <div id="pokemonDet" class="pokemonDet">
+      <section class="icons">
+        <div class="icon"> 
+          <a href="/">
+            <img src="./assets/icons/leftArrow.png" alt="Seta para a esquerda" width="16px" height="16px">
+          </a>  
+        </div>
+        <div class="icon"> 
+            <img src="./assets/icons/heart.png" alt="Seta para a esquerda" width="16px" height="16px">  
+        </div>
+      </section>
+      <div class="pokeInfoDet">
+        <h1 id="pokemonName" class="pokemonName"></h1>
+        <div id="pokeType" class="pokeType"></div>
+
+        <img id="pokemonImage" class="pokemonImage" alt="Imagem do Pokémon">
+      </div>
     </div>
-    
-  </section>
+
+    <div class="pokeDet">
+      <div class="pokeDetText">About</div>
+      <div class="pokeDetText">Base Stats</div>
+      <div class="pokeDetText">Evolution</div>
+      <div class="pokeDetText">Moves</div>
+    </div>
+
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="/./js-developer-pokedex/assets/js/pokemon-model.js"></script>
